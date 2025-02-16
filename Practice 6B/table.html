@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Class Schedule</title>
+    <style>
+        .table-container {
+            text-align: center;
+        }
+
+        .schedule-table {
+            width: 550px;
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: #99FF66;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .time-column {
+            background-color: #CCCCCC;
+            width: 25%;
+        }
+
+        .schedule-caption {
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            background-color: #003300;
+            padding: 10px;
+        }
+
+        colgroup .time-col {
+            background-color: #CCCCCC;
+            width: 25%;
+        }
+
+        colgroup .days-col {
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table class="schedule-table">
+            <caption class="schedule-caption">My Class Schedule</caption>
+            <colgroup>
+                <col class="time-col">
+                <col class="days-col" span="5">
+            </colgroup>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td class="time-column">8:00 AM - 9:00 AM</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td class="time-column">9:00 AM - 10:00 AM</td>
+                <td>English</td>
+                <td>History</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td class="time-column">10:00 AM - 11:00 AM</td>
+                <td colspan="2">PE</td>
+                <td>Art</td>
+                <td colspan="2">Music</td>
+            </tr>
+            <tr>
+                <td class="time-column">11:00 AM - 12:00 PM</td>
+                <td>Computer Science</td>
+                <td>Biology</td>
+                <td>Computer Science</td>
+                <td>Biology</td>
+                <td>Chemistry</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+
